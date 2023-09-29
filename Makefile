@@ -1,8 +1,8 @@
 # Debugging on
 CFLAGS?=-g -O0
 CFLAGS+=-Wall
-CFLAGS+=`pkg-config --cflags libucl`
-LIBS+=`pkg-config --libs libucl`
+CFLAGS+=`pkgconf --cflags libucl`
+LIBS+=`pkgconf --libs libucl`
 PREFIX?=/usr/local
 SRCS=uclcmd.c uclcmd_common.c uclcmd_get.c uclcmd_merge.c \
 	uclcmd_output.c uclcmd_parse.c uclcmd_remove.c uclcmd_set.c
